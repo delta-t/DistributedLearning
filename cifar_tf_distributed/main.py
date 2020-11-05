@@ -16,7 +16,7 @@ def main(index):
     }
     os.environ['TF_CONFIG'] = json.dumps(tf_config)
 
-    per_worker_batch_size = 64
+    per_worker_batch_size = 8
 
     num_workers = len(tf_config['cluster']['worker'])
 

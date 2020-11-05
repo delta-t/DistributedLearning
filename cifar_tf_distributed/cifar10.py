@@ -28,3 +28,9 @@ def build_and_compile_cnn_model():
                   metrics=['accuracy'])
 
     return model
+
+if __name__ == '__main__':
+    batch_size = 8
+    single_worker_dataset = cifar_dataset(batch_size)
+    single_worker_model = build_and_compile_cnn_model()
+    single_worker_model.fit(single_worker_dataset, epochs=1, steps_per_epoch=70)

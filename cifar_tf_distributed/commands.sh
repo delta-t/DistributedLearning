@@ -1,4 +1,5 @@
 #!/bin/bash
+python cifar10.py
 nohup python main.py 0 &> job_0.log
 sleep 10
 cat job_0.log
