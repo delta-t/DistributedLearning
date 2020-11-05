@@ -3,7 +3,7 @@ import os
 
 import tensorflow as tf
 
-from cifar_tf_distributed import cifar10
+import cifar10
 
 per_worker_batch_size = 64
 print(os.environ['TF_CONFIG'])
